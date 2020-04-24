@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func getRatesOnClick(_ sender: Any) {
-        let url = URL(string: "http://data.fixer.io/api/latest?access_key=a7826d9364c3766913743da2efc38310")
+        let url = URL(string: "http://data.fixer.io/api/latest?access_key=yourAccessKeyForAPICall")
         let session = URLSession.shared
         let task = session.dataTask(with: url!) {(data, response, error) in
             if error != nil {
